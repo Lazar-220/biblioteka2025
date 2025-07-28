@@ -8,7 +8,6 @@ import biblioteka.Knjiga;
 public class Biblioteka implements BibliotekaInterface {
 
 	//ova lista je implementirana kao arraylist zbog ceste pretrage 
-
 	List<Knjiga>knjige=new ArrayList<>();
 	
 	@Override
@@ -45,9 +44,9 @@ public class Biblioteka implements BibliotekaInterface {
 		}
 		List<Knjiga>lista=new ArrayList<Knjiga>();
 		for(Knjiga k: knjige) {
-			if(k.getNaslov().toLowerCase().contains(knjiga.getNaslov().toLowerCase())) {
+			if(k.getNaslov().toUpperCase().contains(knjiga.getNaslov().toUpperCase())) {
 				lista.add(k);
-				return lista;
+				
 			}
 		}
 		return lista;
