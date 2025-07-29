@@ -90,7 +90,7 @@ public class Autor {
 	 * 
 	 * @return String sa svim podacima u formatu
 	 * "Autor: #### ####" na primer:
-	 * "Autor: Pera Peric"
+	 * "Autor: Pera Perić"
 	 */
 	@Override
 	public String toString() {
@@ -112,9 +112,9 @@ public class Autor {
 	 * 
 	 * @return 
 	 * <ul>
-	 * <li><b>true</b> - ako je objekat razlicit od null, ako je klase Autor
+	 * <li><b>true</b> - ako je objekat različit od null, ako je klase Autor
 	 *  i ako su i ime i prezime isti kao kod prvog autora</li>
-	 * <li><b>false</b> - u svim ostalim slucajevima</li>
+	 * <li><b>false</b> - u svim ostalim slučajevima</li>
 	 * </ul>
 	 */
 	@Override

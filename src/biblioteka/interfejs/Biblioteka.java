@@ -5,9 +5,17 @@ import java.util.List;
 
 import biblioteka.Knjiga;
 
+/**
+ * Imlementira BibliotekaInterface tako što čuva knjige u listi u memoriji (ArrayList implementacija).
+ * @see java.util.ArrayList
+ */
 public class Biblioteka implements BibliotekaInterface {
 
-	//ova lista je implementirana kao arraylist zbog ceste pretrage 
+	//ova lista je implementirana kao arraylist zbog cestog dodavanja i pretrage 
+	/**
+	 * Knjige se čuvaju u listi u memoriji preko ArrayList zbog čestog dodavanja i pretrage.
+	 * @see java.util.ArrayList
+	 */
 	List<Knjiga>knjige=new ArrayList<>();
 	
 	@Override
@@ -30,6 +38,7 @@ public class Biblioteka implements BibliotekaInterface {
 		knjige.remove(knjiga);
 	}
 
+	
 	@Override
 	public List<Knjiga> vratiListuKnjiga() {
 		return knjige;
